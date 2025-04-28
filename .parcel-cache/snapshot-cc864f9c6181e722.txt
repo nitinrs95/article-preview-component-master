@@ -59,7 +59,7 @@
 156C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\node_modules\msgpackr-extract\package.json133888689592946322 0
 176C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\node_modules\@parcel\source-map\parcel_sourcemap_node\build.js133888689593437103 0
 161C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\node_modules\mdn-data\css\selectors.schema.json133902925626914328 0
-118C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist133903102494430487 1
+118C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist133903102564455711 1
 158C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\node_modules\caniuse-lite\data\regions\AL.js133888689595699169 0
 165C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\node_modules\@swc\helpers\_\_ts_values\package.json133888689603034619 0
 153C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\node_modules\sass\types\value\list.d.ts133888689599437587 0
@@ -5431,7 +5431,7 @@
 142C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist\icon-share.f15fb514.svg133893832772593863 0
 144C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist\icon-twitter.9e8c323a.svg133902925634579942 0
 144C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist\icon-twitter.db01b540.svg133903102494250324 0
-129C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist\index.html133903102494420478 0
+129C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\dist\index.html133903102564445473 0
 145C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\design\desktop-active-state.jpg133888184417146193 0
 139C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\design\desktop-design.jpg133888184417256291 0
 140C:\Users\NITIN\Documents\html-css-js-challenges\article-preview-component-master\article-preview-component-master\design\desktop-preview.jpg133888184417376399 0

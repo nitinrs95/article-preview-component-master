@@ -260,12 +260,6 @@ body {
   background: none;
 }
 
-@media only screen and (width <= 43.75rem) {
-  .btn--active {
-    background-color: red;
-  }
-}
-
 .section-article {
   padding: 2rem;
 }

@@ -25,9 +25,4 @@
     }
     // transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
   }
-  @include a.respond(phone) {
-    &--active {
-      background-color: red;
-    }
-  }
 }
