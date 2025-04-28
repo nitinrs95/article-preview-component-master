@@ -1,0 +1,33 @@
+@use "../abstracts/" as a;
+
+.btn {
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  // transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  &--active {
+    // @include a.respond(phone) {
+    background-color: a.$color-grey-200;
+    // }
+    // transition: color 0.3s ease-in-out;
+    background-color: a.$color-grey-500;
+    // background-color: red;
+
+    svg path {
+      fill: a.$color-white;
+      background: transparent;
+    }
+    // transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  }
+  @include a.respond(phone) {
+    &--active {
+      background-color: red;
+    }
+  }
+}

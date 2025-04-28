@@ -1,0 +1,210 @@
+@use "../abstracts" as a;
+
+.article {
+  display: flex;
+  max-width: 73rem;
+  height: auto;
+  border-radius: 10px;
+  // overflow: hidden;
+  background-color: a.$color-white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 4rem;
+  align-items: stretch;
+  // z-index: -1;
+
+  @include a.respond(phone) {
+    max-width: 37.5rem;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__image {
+    background-image: url(/src/images/drawers.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+
+    background-position: left;
+    background-repeat: no-repeat;
+    min-width: 22.9rem;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    @include a.respond(phone) {
+      // height: 32.7rem;
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-top: 3rem;
+    justify-content: space-between;
+    padding-left: 0rem;
+    overflow: visible;
+
+    @include a.respond(phone) {
+      padding-top: 0rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.25%;
+    color: a.$color-grey-900;
+    padding-right: 3rem;
+    @include a.respond(phone) {
+      padding: 0 3rem;
+    }
+  }
+
+  &__brief {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+    color: a.$color-grey-500;
+    padding-right: 3rem;
+    @include a.respond(phone) {
+      padding: 0 3rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    @include a.respond(phone) {
+      position: relative;
+      padding: 0rem;
+      height: 80px;
+      justify-content: space-around;
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__author-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__author-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: a.$color-grey-900;
+    letter-spacing: 0.12%;
+  }
+
+  &__date {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: a.$color-grey-400;
+    letter-spacing: 0.12%;
+  }
+
+  &__share-button {
+    position: relative;
+    background-color: a.$color-grey-200;
+    // display: inline-block;
+    // z-index: 1;
+    @include a.respond(phone) {
+      position: static;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        background-color: a.$color-grey-400;
+        z-index: 1;
+      }
+      svg {
+        z-index: 2;
+      }
+    }
+  }
+
+  &__social-popup {
+    position: absolute;
+    width: 24.7rem;
+    height: 5.5rem;
+    background-color: a.$color-grey-900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 2rem;
+    visibility: visible;
+    opacity: 1;
+    top: -250%;
+    transition: all 0.5s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      background-color: a.$color-grey-900;
+      top: 99%;
+      left: 50%;
+      transform: translateX(-50%);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+
+    &--hidden {
+      visibility: hidden;
+      opacity: 0;
+      transform: scale(0);
+      // display: none;
+      transform: translateY(80px);
+      top: 200px;
+      width: 100%;
+      height: 100%;
+      // transition: opacity 0.3s ease-in-out;
+    }
+
+    @include a.respond(phone) {
+      top: 0;
+      left: 0;
+      // transform: translate(0px, 0px);
+      // transform: translate(0%, 0%);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      justify-content: flex-start;
+      border-radius: 0 0 10px 10px;
+      padding: 0px 50px;
+      // bottom: 0;
+      &::after {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__social-popup-icon {
+    width: 20px;
+    height: auto;
+    // width: 100%;
+  }
+
+  &__social-popup-text {
+    text-transform: uppercase;
+    color: a.$color-grey-400;
+    letter-spacing: 25%;
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+}
